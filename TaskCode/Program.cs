@@ -76,12 +76,10 @@ for (int i = 0; i < inputArray.Length; i++)
         }
     }
 
-        Console.Write(" -> ");
-
-        ShowArray(SortedArray);
-
-        Console.WriteLine();
-        Console.WriteLine();
+Console.Write(" -> ");
+ShowArray(SortedArray);
+Console.WriteLine();
+Console.WriteLine();
 
 
                 
