@@ -51,3 +51,34 @@ Console.Write("Input quantity of array elements: ");
 int arrayLength = Convert.ToInt32(Console.ReadLine());
 
 
+// ОСНОВНОЙ КОД ПРОГРАММЫ:
+
+string[] inputArray = new string[arrayLength];
+GetArray(inputArray);
+
+Console.WriteLine();
+ShowArray(inputArray);
+
+int sortedArrayLength = SortArray(inputArray);
+string[] SortedArray = new string[sortedArrayLength];
+
+int count = 0;
+
+for (int i = 0; i < inputArray.Length; i++)
+    {
+    if (inputArray[i].Length  <= 3)
+        {
+            SortedArray[count] = inputArray[i];
+            count++;
+        }
+    }
+
+        Console.Write(" -> ");
+
+        ShowArray(SortedArray);
+
+        Console.WriteLine();
+        Console.WriteLine();
+
+
+                
